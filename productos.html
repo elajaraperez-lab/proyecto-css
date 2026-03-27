@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore – Productos</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span>Tech<em>Store</em></span>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="index.html"><span class="icono">🏠</span> Inicio</a></li>
+        <li><a href="productos.html" class="activo"><span class="icono">📦</span> Productos</a></li>
+        <li><a href="#"><span class="icono">🛒</span> Carrito</a></li>
+        <li><a href="#"><span class="icono">📊</span> Estadísticas</a></li>
+        <li><a href="#"><span class="icono">👤</span> Mi cuenta</a></li>
+        <li><a href="#"><span class="icono">⚙️</span> Configuración</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      &copy; 2025 TechStore
+    </div>
+  </aside>
+
+  <div class="contenido">
+
+    <header class="topbar">
+      <span class="topbar-titulo">Productos</span>
+      <div class="topbar-acciones">
+        <span class="badge">8 productos</span>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="page-header">
+        <h1>Listado de Productos</h1>
+        <p>Catálogo completo de artículos disponibles en tienda</p>
+        <div class="linea"></div>
+      </div>
+
+      <div class="seccion-tabla">
+        <div class="seccion-tabla-header">
+          <h2>Todos los productos</h2>
+          <a href="index.html" class="btn btn-primario">← Volver al inicio</a>
+        </div>
+        <div class="tabla-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Marca</th>
+                <th>Precio unitario</th>
+                <th>Stock</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Laptop Pro X1</td>
+                <td>Computadoras</td>
+                <td>TechBrand</td>
+                <td>$1,299.00</td>
+                <td>14</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Monitor UltraWide 34"</td>
+                <td>Monitores</td>
+                <td>ViewMax</td>
+                <td>$649.00</td>
+                <td>7</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Teclado Mecánico RGB</td>
+                <td>Periféricos</td>
+                <td>KeyMaster</td>
+                <td>$119.00</td>
+                <td>0</td>
+                <td><span class="estado agotado">Agotado</span></td>
+              </tr>
+              <tr>
+                <td>004</td>
+                <td>Mouse Inalámbrico</td>
+                <td>Periféricos</td>
+                <td>ClickPro</td>
+                <td>$55.00</td>
+                <td>3</td>
+                <td><span class="estado limitado">Limitado</span></td>
+              </tr>
+              <tr>
+                <td>005</td>
+                <td>Auriculares Bluetooth</td>
+                <td>Audio</td>
+                <td>SoundWave</td>
+                <td>$189.00</td>
+                <td>21</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>006</td>
+                <td>Webcam Full HD 1080p</td>
+                <td>Video</td>
+                <td>ClearView</td>
+                <td>$79.00</td>
+                <td>0</td>
+                <td><span class="estado agotado">Agotado</span></td>
+              </tr>
+              <tr>
+                <td>007</td>
+                <td>Disco SSD 1TB</td>
+                <td>Almacenamiento</td>
+                <td>StoreFast</td>
+                <td>$99.00</td>
+                <td>30</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>008</td>
+                <td>Hub USB-C 7 puertos</td>
+                <td>Conectividad</td>
+                <td>ConnectAll</td>
+                <td>$45.00</td>
+                <td>2</td>
+                <td><span class="estado limitado">Limitado</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      Desarrollado por <span>TechStore</span> · 2025. Todos los derechos reservados.
+    </footer>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('abierto');
+      overlay.classList.toggle('visible');
+    });
+
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('abierto');
+      overlay.classList.remove('visible');
+    });
+  </script>
+
+</body>
+</html>

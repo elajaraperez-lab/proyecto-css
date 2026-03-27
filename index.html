@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore – Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span>Tech<em>Store</em></span>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="index.html" class="activo"><span class="icono">🏠</span> Inicio</a></li>
+        <li><a href="productos.html"><span class="icono">📦</span> Productos</a></li>
+        <li><a href="#"><span class="icono">🛒</span> Carrito</a></li>
+        <li><a href="#"><span class="icono">📊</span> Estadísticas</a></li>
+        <li><a href="#"><span class="icono">👤</span> Mi cuenta</a></li>
+        <li><a href="#"><span class="icono">⚙️</span> Configuración</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      &copy; 2025 TechStore
+    </div>
+  </aside>
+
+  <div class="contenido">
+
+    <header class="topbar">
+      <span class="topbar-titulo">Panel Principal</span>
+      <div class="topbar-acciones">
+        <span class="badge">3 nuevos pedidos</span>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="hero">
+        <img src="img/banner.svg" alt="Banner principal TechStore" />
+      </div>
+
+      <div class="tarjetas">
+        <div class="tarjeta rojo">
+          <div class="tarjeta-numero">128</div>
+          <div class="tarjeta-label">Productos en stock</div>
+        </div>
+        <div class="tarjeta marino">
+          <div class="tarjeta-numero">47</div>
+          <div class="tarjeta-label">Pedidos este mes</div>
+        </div>
+        <div class="tarjeta verde">
+          <div class="tarjeta-numero">$9,840</div>
+          <div class="tarjeta-label">Ventas totales</div>
+        </div>
+      </div>
+
+      <div class="seccion-imagenes">
+        <div class="imagen-card">
+          <img src="img/producto.svg" alt="Producto destacado" />
+          <span class="etiqueta">Producto destacado</span>
+        </div>
+        <div class="imagen-card">
+          <img src="img/nosotros.svg" alt="Sobre TechStore" />
+          <span class="etiqueta">Nosotros</span>
+        </div>
+      </div>
+
+      <div class="seccion-tabla">
+        <div class="seccion-tabla-header">
+          <h2>Resumen de inventario</h2>
+          <a href="productos.html" class="btn btn-primario">Ver todos los productos</a>
+        </div>
+        <div class="tabla-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Laptop Pro X1</td>
+                <td>Computadoras</td>
+                <td>$1,299.00</td>
+                <td>14</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Monitor UltraWide 34"</td>
+                <td>Monitores</td>
+                <td>$649.00</td>
+                <td>7</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Teclado Mecánico RGB</td>
+                <td>Periféricos</td>
+                <td>$119.00</td>
+                <td>0</td>
+                <td><span class="estado agotado">Agotado</span></td>
+              </tr>
+              <tr>
+                <td>004</td>
+                <td>Mouse Inalámbrico</td>
+                <td>Periféricos</td>
+                <td>$55.00</td>
+                <td>3</td>
+                <td><span class="estado limitado">Limitado</span></td>
+              </tr>
+              <tr>
+                <td>005</td>
+                <td>Auriculares Bluetooth</td>
+                <td>Audio</td>
+                <td>$189.00</td>
+                <td>21</td>
+                <td><span class="estado disponible">Disponible</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      Desarrollado por <span>TechStore</span> · 2025. Todos los derechos reservados.
+    </footer>
+
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('abierto');
+      overlay.classList.toggle('visible');
+    });
+
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('abierto');
+      overlay.classList.remove('visible');
+    });
+  </script>
+
+</body>
+</html>
