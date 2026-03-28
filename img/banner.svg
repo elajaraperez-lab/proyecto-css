@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='400' viewBox='0 0 900 400'>
+  <defs>
+    <linearGradient id='g1' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#1a1a2e'/>
+      <stop offset='100%' style='stop-color:#16213e'/>
+    </linearGradient>
+  </defs>
+  <rect width='900' height='400' fill='url(#g1)'/>
+  <circle cx='700' cy='80' r='180' fill='none' stroke='#e63946' stroke-width='1' opacity='0.3'/>
+  <circle cx='700' cy='80' r='120' fill='none' stroke='#e63946' stroke-width='1' opacity='0.5'/>
+  <circle cx='700' cy='80' r='60' fill='#e63946' opacity='0.15'/>
+  <rect x='60' y='120' width='400' height='4' fill='#e63946' rx='2'/>
+  <rect x='60' y='140' width='260' height='4' fill='#ffffff' opacity='0.2' rx='2'/>
+  <text x='60' y='105' font-family='Georgia' font-size='42' fill='white' font-weight='bold'>TechStore</text>
+  <text x='60' y='180' font-family='Arial' font-size='16' fill='#aaaacc'>Tecnología de calidad</text>
+  <rect x='60' y='210' width='130' height='44' rx='6' fill='#e63946'/>
+  <text x='125' y='238' font-family='Arial' font-size='14' fill='white' text-anchor='middle' font-weight='bold'>Ver productos</text>
+</svg>
