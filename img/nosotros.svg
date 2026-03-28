@@ -1,0 +1,20 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='340' viewBox='0 0 800 340'>
+  <defs>
+    <linearGradient id='g3' x1='0%' y1='0%' x2='100%' y2='0%'>
+      <stop offset='0%' style='stop-color:#e63946'/>
+      <stop offset='100%' style='stop-color:#c1121f'/>
+    </linearGradient>
+  </defs>
+  <rect width='800' height='340' fill='#1a1a2e'/>
+  <rect x='0' y='0' width='8' height='340' fill='url(#g3)'/>
+  <text x='60' y='100' font-family='Georgia' font-size='36' fill='white' font-weight='bold'>Sobre Nosotros</text>
+  <rect x='60' y='115' width='340' height='3' fill='#e63946' rx='2'/>
+  <text x='60' y='155' font-family='Arial' font-size='15' fill='#aaaacc'>Ofrecemos los mejores productos tecnológicos</text>
+  <text x='60' y='180' font-family='Arial' font-size='15' fill='#aaaacc'>con atención personalizada y envío rápido.</text>
+  <circle cx='620' cy='130' r='70' fill='#e63946' opacity='0.1'/>
+  <circle cx='660' cy='170' r='50' fill='#e63946' opacity='0.15'/>
+  <text x='620' y='145' font-family='Arial' font-size='40' fill='white' text-anchor='middle'>📦</text>
+  <rect x='60' y='220' width='120' height='16' rx='3' fill='#ffffff10'/>
+  <rect x='200' y='220' width='90' height='16' rx='3' fill='#ffffff10'/>
+  <rect x='310' y='220' width='110' height='16' rx='3' fill='#ffffff10'/>
+</svg>
